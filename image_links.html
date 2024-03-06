@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-2xl">Welcome to Our Website!</h1>
+    </header>
+
+    <nav class="bg-gray-800 text-white p-4">
+        <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#gallery" class="hover:underline">Gallery</a></li>
+            <li><a href="#menu" class="hover:underline">Menu</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="p-4">
+        <h2 class="text-2xl">Home</h2>
+        <p>Explore the latest in technology with our featured image:</p>
+        <a href="#" target="_blank">
+            <img src="./images/technology.jpg" alt="Technology Image" class="max-w-full h-auto mt-4">
+        </a>
+    </section>
+
+    <section id="gallery" class="p-4">
+        <h2 class="text-2xl">Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <a href="#" target="_blank">
+                <img src="./images/nature.jpg" alt="Nature Image 1" class="max-w-full h-auto">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./images/nature2.jpg" alt="Nature Image 2" class="max-w-full h-auto">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./images/nature.jpg" alt="Nature Image 3" class="max-w-full h-auto">
+            </a>
+        </div>
+    </section>
+
+    <section id="menu" class="p-4">
+        <h2 class="text-2xl">Menu Items</h2>
+        <ul class="space-y-4">
+            <li>
+                <a href="#" target="_blank" class="flex items-center space-x-2 hover:underline">
+                    <img src="./images/food1.jpg" alt="Food Item 1" class="max-w-full h-auto w-16">
+                    <span>Breakfast</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="flex items-center space-x-2 hover:underline">
+                    <img src="./images/food2.jpg" alt="Food Item 2" class="max-w-full h-auto w-16">
+                    <span>Brunch Options</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="flex items-center space-x-2 hover:underline">
+                    <img src="./images/food3.jpg" alt="Food Item 3" class="max-w-full h-auto w-16">
+                    <span>Burger</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
